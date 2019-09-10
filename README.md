@@ -30,11 +30,17 @@ AndroidX library used for View dependencies.
 
 # Used Technologies
 Dagger2 - Dependency Injection
+
 Room Persistence Library - Database Operations
+
 Picasso - Image preview and caching
+
 Retrofit- Network Operations
+
 Kotlin Coroutine - Periodic tasks
+
 RxJava2- Background tasks and logic
+
 ButterKnife - View Injections
 
 
