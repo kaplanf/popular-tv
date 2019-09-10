@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">Popular Tv</string>
+  <string name="some_error">Some Error</string>
+  <string name="action_search">Search</string>
+  <string name="search_hint">Search Movies</string>
+  <string name="ok">OK</string>
+  <string name="cancel">CANCEL</string>
+  <string name="update_alert_title">Update Alert</string>
+  <string name="update_alert_message">New popular shows added, would you like to update?</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:card_view="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="8dp">
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/movie_item_card"
+    app:cardBackgroundColor="@color/general_background"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+      <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+
+      <ImageView
+        android:id="@+id/movie_item_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+      <TextView
+        android:id="@+id/movie_item_title"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="MOVIE"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/movie_item_image"
+        app:layout_constraintRight_toRightOf="@id/guideline_right_margin"
+        app:layout_constraintTop_toTopOf="@id/movie_item_image"/>
+
+      <TextView
+        android:id="@+id/movie_item_vote_average"
+        android:textStyle="italic|bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/movie_item_image"
+        app:layout_constraintRight_toRightOf="@id/guideline_right_margin"
+        app:layout_constraintTop_toBottomOf="@id/movie_item_title"/>
+
+      <TextView
+        android:id="@+id/movie_item_overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/movie_item_image"
+        app:layout_constraintRight_toRightOf="@id/guideline_right_margin"
+        app:layout_constraintTop_toBottomOf="@id/movie_item_vote_average"/>
+
+      <TextView
+        android:id="@+id/movie_item_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/movie_item_image"/>
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/movie_item_favorite"
+        app:layout_constraintRight_toRightOf="@id/guideline_right_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/favorite_selector"
+        android:layout_height="wrap_content"></ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
