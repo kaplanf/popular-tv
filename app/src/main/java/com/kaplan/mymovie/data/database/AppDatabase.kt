@@ -10,6 +10,8 @@ abstract class AppDatabase : RoomDatabase() {
 
     abstract fun favoritesDao(): FavoritesDao
 
+
     //abc
+
 
 }
